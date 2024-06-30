@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/Super-App/static/css/main.98d94cda.css",
+    "main.js": "/Super-App/static/js/main.b0b7e112.js",
+    "static/js/453.63226d89.chunk.js": "/Super-App/static/js/453.63226d89.chunk.js",
+    "static/media/image 13.png": "/Super-App/static/media/image 13.6e8dcc3998e874153553.png",
+    "static/media/image 14.png": "/Super-App/static/media/image 14.9e4ace42e6514d758497.png",
+    "static/media/image 3.png": "/Super-App/static/media/image 3.0fbc6d4e6fac846179b9.png",
+    "static/media/image 4.png": "/Super-App/static/media/image 4.02bb31ff2d64613c4f3e.png",
+    "static/media/image 8.png": "/Super-App/static/media/image 8.2281fad29ecab13d0cd7.png",
+    "static/media/image 9.png": "/Super-App/static/media/image 9.14238e649add9bfb0f77.png",
+    "static/media/image 6.png": "/Super-App/static/media/image 6.e93508bc687546fd791f.png",
+    "static/media/image 11.png": "/Super-App/static/media/image 11.f547d4aa1756d1aa92c8.png",
+    "static/media/image 7.png": "/Super-App/static/media/image 7.68f458e7012ee39c21f2.png",
+    "static/media/image 10.png": "/Super-App/static/media/image 10.d47ec5c5ae0dd2020f02.png",
+    "static/media/image 2.png": "/Super-App/static/media/image 2.305fc0b84d50d1c331f1.png",
+    "static/media/logoimage 141.png": "/Super-App/static/media/logoimage 141.35cbc5cc2b5b3b5881c7.png",
+    "index.html": "/Super-App/index.html",
+    "main.98d94cda.css.map": "/Super-App/static/css/main.98d94cda.css.map",
+    "main.b0b7e112.js.map": "/Super-App/static/js/main.b0b7e112.js.map",
+    "453.63226d89.chunk.js.map": "/Super-App/static/js/453.63226d89.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.98d94cda.css",
+    "static/js/main.b0b7e112.js"
+  ]
+}
