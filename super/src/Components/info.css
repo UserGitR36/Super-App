@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=One+Day&display=swap');
 
-/* General Styles */
+
 body {
   font-family: 'One Day', sans-serif;
   background-color: black;
@@ -22,7 +22,7 @@ body {
 
 }
 
-/* Section Specific Styles */
+
 .user-profile {
   background-color: #5746EA;
 }
@@ -43,7 +43,7 @@ body {
   background-color: #333;
 }
 
-/* User Profile Card */
+
 .user-profile {
   display: flex;
   justify-content: space-between;
@@ -113,7 +113,7 @@ button:hover {
   background-color: #00ff00;
 }
 
-/* Responsive Design */
+
 @media (min-width: 768px) {
   .info-page {
     grid-template-columns: 1fr 1fr;

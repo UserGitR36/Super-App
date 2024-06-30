@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
 import './Category.css'; 
-
 import image2 from '../assets/image 2.png';
 import image3 from '../assets/image 3.png';
 import image4 from '../assets/image 4.png';
@@ -26,18 +24,17 @@ const categories = [
 
 const Category = () => {
   const [selectedCategories, setSelectedCategories] = useState([]);
+  
   useEffect(() => {
     const storedCategories = localStorage.getItem('selectedCategories');
     if (storedCategories) {
       setSelectedCategories(JSON.parse(storedCategories));
-  }
-  }, 
-  []); 
+    }
+  }, []); 
+  
   useEffect(() => {
     localStorage.setItem('selectedCategories', JSON.stringify(selectedCategories));
   }, [selectedCategories]);
-
-
 
   const handleCategoryClick = (category) => {
     setSelectedCategories((prev) =>
@@ -67,10 +64,10 @@ const Category = () => {
         </p>
         <div className="selected-categories">
           {selectedCategories.map((category) => (
-            <span key={category} className="category-chip">
-              {category}{' '}
+            <div key={category} className="category-chip">
+              <span>{category}</span>
               <button onClick={() => handleCategoryClick(category)}>X</button>
-            </span>
+            </div>
           ))}
         </div>
         {selectedCategories.length < 3 && (
@@ -85,7 +82,7 @@ const Category = () => {
           {categories.map((category) => (
             <div
               key={category.name}
-              className={`category-box ${category.name}`}
+              className={`category-box ${category.name} ${selectedCategories.includes(category.name) ? 'selected' : ''}`}
               onClick={() => handleCategoryClick(category.name)}
             >
               <h3 className="category-heading">{category.name}</h3>
@@ -102,3 +99,4 @@ const Category = () => {
 };
 
 export default Category;
+

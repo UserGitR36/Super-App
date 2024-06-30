@@ -11,50 +11,63 @@ const TimerCard = () => {
   useEffect(() => {
     if (isRunning) {
       timerRef.current = setInterval(() => {
-        setSeconds((prev) => {
-          if (prev === 0) {
-            if (minutes === 0 && hours === 0) {
-              clearInterval(timerRef.current);
-              setIsRunning(false);
-              return 0;
-            }
-            if (minutes === 0) {
-              setHours((h) => h - 1);
+        if (hours === 0 && minutes === 0 && seconds === 0) {
+          clearInterval(timerRef.current);
+          setIsRunning(false);
+        } else {
+          if (seconds === 0) {
+            if (minutes === 0 && hours > 0) {
+              setHours((prev) => prev - 1);
               setMinutes(59);
-              return 59;
+              setSeconds(59);
+            } else if (minutes > 0) {
+              setMinutes((prev) => prev - 1);
+              setSeconds(59);
             }
-            setMinutes((m) => m - 1);
-            return 59;
+          } else {
+            setSeconds((prev) => prev - 1);
           }
-          return prev - 1;
-        });
+        }
       }, 1000);
     } else {
       clearInterval(timerRef.current);
     }
 
     return () => clearInterval(timerRef.current);
-  }, [isRunning, minutes, hours]);
+  }, [isRunning, hours, minutes, seconds]);
 
   const handleStart = () => {
-    setIsRunning(true);
+    if (hours !== 0 || minutes !== 0 || seconds !== 0) {
+      setIsRunning(true);
+    }
   };
 
   const handleIncrement = (type) => {
-    if (type === 'hours') setHours(hours + 1);
-    if (type === 'minutes') setMinutes(minutes + 1);
-    if (type === 'seconds') setSeconds(seconds + 1);
+    if (type === 'hours') setHours((prev) => prev + 1);
+    if (type === 'minutes') setMinutes((prev) => prev + 1);
+    if (type === 'seconds') {
+      if (seconds < 59) {
+        setSeconds((prev) => prev + 1);
+      } else {
+        setSeconds(0);
+        if (minutes < 59) {
+          setMinutes((prev) => prev + 1);
+        } else {
+          setMinutes(0);
+          setHours((prev) => prev + 1);
+        }
+      }
+    }
   };
 
   const handleDecrement = (type) => {
-    if (type === 'hours' && hours > 0) setHours(hours - 1);
-    if (type === 'minutes' && minutes > 0) setMinutes(minutes - 1);
-    if (type === 'seconds' && seconds > 0) setSeconds(seconds - 1);
+    if (type === 'hours' && hours > 0) setHours((prev) => prev - 1);
+    if (type === 'minutes' && minutes > 0) setMinutes((prev) => prev - 1);
+    if (type === 'seconds' && seconds > 0) setSeconds((prev) => prev - 1);
   };
 
   return (
     <div className="timer-section">
-      
       <div className="circle">
         <div className="time">
           {String(hours).padStart(2, '0')}:
@@ -80,21 +93,13 @@ const TimerCard = () => {
           <button onClick={() => handleIncrement('seconds')}>▲</button>
           <span>{String(seconds).padStart(2, '0')}</span>
           <button onClick={() => handleDecrement('seconds')}>▼</button>
-          
         </div>
       </div>
-      <button className="start-button" onClick={handleStart}>Start</button>
+      <button className="start-button" onClick={handleStart}>
+        Start
+      </button>
     </div>
   );
 };
 
 export default TimerCard;
-
-
-
-
-
-
-
-
-

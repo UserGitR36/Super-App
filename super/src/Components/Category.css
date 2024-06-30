@@ -34,26 +34,25 @@
   gap: 30px;
   margin-bottom: 20px;
   align-items: center;
-  
-
 }
 
 .category-chip {
   background-color: green;
-  color: White;
-  padding: 12px 12px;
+  color: white;
+  padding: 12px;
   border-radius: 20px;
   display: flex;
-  
-  
-  
+  align-items: center;
+}
+
+.category-chip span {
+  margin-right: 10px; /* Adjust spacing between category name and 'X' button */
 }
 
 .category-chip button {
   background: none;
-  border: none; 
+  border: none;
   color: white;
-  margin-left: 20px;
   cursor: pointer;
 }
 
@@ -62,13 +61,12 @@
   font-size: 14px;
   display: flex;
   align-items: center;
-  margin-right:60px;
+  margin-right: 60px;
 }
 
 .triangle {
   margin-right: 8px;
   font-size: 20px;
-
 }
 
 .right-section {
@@ -77,7 +75,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 }
 
 .category-grid {
@@ -85,81 +82,87 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   margin-top: 40px;
-  text-align: center; 
-  
+  text-align: center;
 }
 
 .category-box {
-  background-color:green;   
   padding: 10px;
   border-radius: 20px;
   cursor: pointer;
-  text-align:center;
+  text-align: center;
   display: flex;
-  border: 3px solid green;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border: 3px solid transparent; /* Ensure initial border is transparent */
 }
 
 .category-box img {
   width: 90%;
   height: auto;
   border-radius: 10px;
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
 }
 
 .category-heading {
   font-size: 18px;
   margin-bottom: 10px;
-  color: white; 
+  color: white;
 }
 
-.category-box.Action { 
-  background-color: #FF5209; 
-} 
-.category-box.Drama { 
-  background-color: #D7A4FF; 
-} 
-.category-box.Romance { 
-  background-color:#11B800 ; 
-} 
-.category-box.Thriller { 
-  background-color: #84C2FF; 
-} 
-.category-box.Western { 
-  background-color: #902500; 
-} 
-.category-box.Horror { 
-  background-color: #7358FF; 
-} 
-.category-box.Fantasy { 
-  background-color: #FF4ADE; 
-} 
-.category-box.Music { 
-  background-color: #E61E32; 
-} 
-.category-box.Fiction { 
-  background-color: #6CD061; 
-} 
+.category-box.Action {
+  background-color: #ff5209;
+}
+
+.category-box.Drama {
+  background-color: #d7a4ff;
+}
+
+.category-box.Romance {
+  background-color: #11b800;
+}
+
+.category-box.Thriller {
+  background-color: #84c2ff;
+}
+
+.category-box.Western {
+  background-color: #902500;
+}
+
+.category-box.Horror {
+  background-color: #7358ff;
+}
+
+.category-box.Fantasy {
+  background-color: #ff4ade;
+}
+
+.category-box.Music {
+  background-color: #e61e32;
+}
+
+.category-box.Fiction {
+  background-color: #6cd061;
+}
 
 .category-box.selected {
-  border: 3px solid green;
+  border-color: #11b800; /* Adjusted to set border color to #11b800 when selected */
 }
 
 .next-button {
   padding: 12px 24px;
   font-size: 18px;
-  background-color: #11B800;
-  color: White;
+  background-color: #11b800;
+  color: white;
   border: none;
   border-radius: 40px;
   cursor: pointer;
-  margin-left: 450px; 
+  margin-left: 450px;
   margin-top: 20px;
-
 }
 
 .next-button:hover {
   background-color: #00cc00;
 }
+

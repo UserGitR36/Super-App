@@ -1,6 +1,6 @@
 import React from 'react';
 import './Newscard.css';
-// Simulated news data (replace with actual API fetch in production)
+
 const newsData = [
   {
     uri: "8185315184",

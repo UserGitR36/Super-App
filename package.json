@@ -1,5 +1,5 @@
 {
   "dependencies": {
-    "react-countdown-circle-timer": "^3.2.1"
+    "gh-pages": "^6.1.1"
   }
 }

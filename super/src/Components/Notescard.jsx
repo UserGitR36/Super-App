@@ -8,7 +8,7 @@ const NotesCard = ({ newNote, setNewNote }) => {
       <textarea 
         value={newNote} 
         onChange={(e) => setNewNote(e.target.value)} 
-        placeholder="Type your notes here..." // Add a placeholder attribute
+        placeholder="Type your notes here..." 
       />
     </div>
   );

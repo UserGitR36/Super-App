@@ -1,16 +1,16 @@
 .news-section {
   margin: 8px;
-  padding: 15px; /* Increased padding for better spacing */
+  padding: 15px; 
   border-radius: 10px;
   grid-column: 3;
   display: grid;
   color: white;
-  background-color: #444; /* This already sets the background color for the whole section */
+  background-color: #444; 
   margin-top: 20px;
 }
 
 .news-section h2 {
-  margin-bottom: 0px; /* Added some margin for better spacing */
+  margin-bottom: 0px; 
 }
 
 .news-section ul {
@@ -19,7 +19,7 @@
 }
 
 .news-section li {
-  margin-bottom: 0px; /* Added some margin for better spacing */
+  margin-bottom: 0px; 
 }
 
 .news-section a {
