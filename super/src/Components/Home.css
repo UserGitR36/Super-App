@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=One+Day&display=swap');
+
+* {
+  box-sizing: border-box;
+
+
+}
+
+.home {
+  display: flex;
+  height: 100vh;
+}
+
+.left-section {
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+
+.cover-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.tagline {
+  z-index: 2;
+  color: white;
+  font-size: 36px;
+  margin-top: 390px;
+  text-align: left;
+  padding: 20px;
+}
+
+.right-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: black;
+  color: white;
+}
+
+.right-section h2 {
+  margin-bottom: 5px;
+  font-family: 'One Day', sans-serif;
+  font-size: 38px;
+  text-align: center;
+}
+
+.right-section p {
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.form-group {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"] {
+  width: 80%;
+  padding: 12px;
+  font-size: 18px;
+  border: none;
+  border-radius: 4px;
+  background-color: #333; /* Darker background color for input fields */
+  color: white;
+  text-align: center;
+}
+
+.form-group input[type="text"]::placeholder,
+.form-group input[type="email"]::placeholder,
+.form-group input[type="tel"]::placeholder {
+  color: #bbb; /* Lighter color for placeholder text */
+  opacity: 1; /* Ensure the placeholder text is fully opaque */
+  text-align: left;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  width: 80%;
+}
+
+.checkbox-container input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.error {
+  border: 2px solid red;
+}
+
+.error-text {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.sign-up-button-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.sign-up-button {
+  width: 80%;
+  padding: 10px 24px;
+  font-size: 18px;
+  background-color:#11B800 ;
+  color: White;
+  border: none;
+  border-radius: 34px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.sign-up-button:hover {
+  background-color: #00cc00;
+}
+
+a {
+  color: #00ff00;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.terms,
+.privacy {
+  text-align: center;
+  margin-top: 10px;
+  width: 80%;
+}
+.heading {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-size: 38px;
+  margin-left: 90px;
+}

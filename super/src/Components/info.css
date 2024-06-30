@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=One+Day&display=swap');
+
+/* General Styles */
+body {
+  font-family: 'One Day', sans-serif;
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.info-page {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.info-section {
+  padding: 20px;
+  border-radius: 10px;
+
+}
+
+/* Section Specific Styles */
+.user-profile {
+  background-color: #5746EA;
+}
+
+.weather-section {
+  background-color: #101744;
+}
+
+.notes-section {
+  background-color: #F1C75B;
+}
+
+.timer-section {
+  background-color: #1E2343;
+}
+
+.news-section {
+  background-color: #333;
+}
+
+/* User Profile Card */
+.user-profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.user-image {
+  margin-right: 20px;
+  width: 300px;
+  height: 300px;
+}
+
+.user-details {
+  display: flex;
+  align-items: center;
+}
+
+.user-info {
+  text-align: left;
+  margin-left: 10px;
+}
+
+.user-categories {
+  margin-top: 20px;
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.category-chip {
+  background-color: green;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* Buttons */
+button {
+  background-color: #00ff00;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+button:hover {
+  background-color: #00cc00;
+}
+
+.browse-button {
+  margin-top: 20px;
+  padding: 12px 30px;
+  background-color: #11B800;
+  color: white;
+  border: none;
+  border-radius: 45px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-left: 210px; 
+}
+
+.browse-button:hover {
+  background-color: #00ff00;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .info-page {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .info-page {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+
+
+

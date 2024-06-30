@@ -1,0 +1,63 @@
+userprofilecard.css file
+.user-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+  }
+  
+  .user-profile {
+    grid-column: 1;
+    height: 350px;
+    background-color: #5746EA;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width:540px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .user-image {
+    margin-right: 100px;
+    width: 100px;
+    height: 320px;
+    border-radius: 50px;
+    
+  }
+  
+  .user-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    font-size: 20px;
+    font-family:'One Day', sans-serif; ;
+  }
+  
+  .user-info {
+    text-align: left;
+    margin-right: 40px;
+  
+  }
+
+  .user-categories {
+    margin-top: 20px;
+  }
+  
+  .categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .category-chip {
+    background-color: green;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+  }
+
+
+  

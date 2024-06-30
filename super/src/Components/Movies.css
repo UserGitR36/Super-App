@@ -1,0 +1,78 @@
+.movies-section {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+}
+
+.movies-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.movies-header h1 {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+ 
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.logo-image {
+  width: 70px; /* Adjust width as needed */
+  height: 70px; /* Adjust height as needed */
+  border-radius: 50%; /* Make it circular */
+  margin-top: 30px;
+  margin-right:40px;
+}
+
+.movie-category {
+  margin-bottom: 40px;
+}
+
+.movie-category h3 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.movie-card {
+  background-color: #222;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out; /* Added transition effect */
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+.movie-card:hover {
+  transform: scale(1.05); /* Scale up slightly on hover */
+}
+
+.movie-card img {
+  width: 80%;
+  height: auto;
+  border-bottom: 1px solid #444;
+}
+
+.movie-card p {
+  margin: 10px 0;
+  font-size: 0.875rem;
+}
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  

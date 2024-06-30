@@ -1,0 +1,27 @@
+.notes-card {
+  background-color:#F1C75B;
+  padding: 10px;
+  border-radius: 10px;
+  height: 57%;
+  grid-column: 2 ;
+  display:flexbox;
+  color: black;
+  overflow-y: auto;
+  cursor: pointer;
+  margin-right:1%;
+  margin-top: 20px; 
+}
+
+.notes-card h2 {
+  margin-top: 10px;
+}
+
+.notes-card textarea {
+  width: 100%;
+  height: 40px;
+  background-color:#F1C75B;
+}
+
+  
+
+  

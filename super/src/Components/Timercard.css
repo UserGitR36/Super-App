@@ -1,0 +1,143 @@
+.timer-section {
+  display: grid;
+  grid-template-columns: auto auto auto; /* Three columns: one for the circle, one for the controls, one for the start button */
+  align-items: center;
+  justify-content: center;
+  background-color: #1E2343;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.5);
+  grid-column: 1;
+  margin-left: 20px;
+  width:140%;
+  
+}
+
+.timer-section h2 {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.circle {
+  width: 200px; /* Adjusted width */
+  height: 200px; /* Adjusted height to keep it a perfect circle */
+  border-radius: 50%;
+  background-color: #1b1b2f;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.5);
+  margin-right: 40px; /* Space between circle and controls */
+
+}
+
+.circle::before {
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border-radius: 50%;
+  border: 5px solid #ff4c4c;
+  box-sizing: border-box;
+}
+
+.time {
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.time-controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 40px; /* Space between circle and controls */
+}
+
+.time-control-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.time-control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px; /* Space between each control set */
+}
+
+.time-control h3 {
+  color: #ffffff;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.time-control button {
+  background-color: #1b1b2f;
+  border: none;
+  color: #ffffff;
+  width: 40px;
+  height: 30px;
+  margin: 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.time-control button:active {
+  background-color: #ff0000;
+}
+
+.time-control span {
+  color: #ffffff;
+  margin: 0 5px;
+}
+
+.start-button {
+  grid-column: 2; /* Place the start button in the third column */
+  width: 250px; /* Adjusted width to match the circle */
+  padding: 10px 10px;
+  background-color: #ff4c4c;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 15px;
+  text-align: center; /* Center align text */
+  margin-left: 40px; /* Space between controls and start button */
+}
+
+.start-button:active {
+  background-color: #ff0000;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
